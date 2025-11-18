@@ -13,7 +13,7 @@ from flask import Flask, request, abort
 TELEGRAM_TOKEN = "8409832972:AAGLcBs7q6PwtxZDGpB-3SCNgTwzfPKPUVw"
 ASSEMBLYAI_KEY = "a356bbda79da4fd8a77a12ad819c47e2"
 GEMINI_KEY = "AIzaSyB1HVBY1a8XGE3bijTNJVBO1W759yK5KGc"
-WEBHOOK_URL = "https://dubbing-bot-fpup.onrender.com"
+WEBHOOK_URL = "https://midkayga-4-raad.onrender.com"
 
 FFMPEG_ENV = os.environ.get("FFMPEG_BINARY", "")
 POSSIBLE_FFMPEG_PATHS = [FFMPEG_ENV, "./ffmpeg", "/usr/bin/ffmpeg", "/usr/local/bin/ffmpeg", "ffmpeg"]
