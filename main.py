@@ -55,7 +55,7 @@ LANG_CODE_ASR = {
     'Spanish': 'es',
 }
 
-TTS_VOICE_SINGLE = "so-SO-MuuseNeural"
+TTS_VOICE_SINGLE = "it-IT-MarcelloMultilingualNeural"
 
 user_data = {}
 processing_active = False
@@ -68,7 +68,7 @@ app = Flask(__name__)
 
 def send_gemini_translation(text, source_lang, target_lang):
     prompt_text = f"Translate the following text from {source_lang} into {target_lang} Write numbers as they are pronounced in Somali (for example, “laba kun iyo labaatan iyo shan” instead of 2025). Do not add any introduction or explanation: {text}"
-    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+    url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
     headers = {
         "Content-Type": "application/json",
         "X-goog-api-key": GEMINI_KEY
